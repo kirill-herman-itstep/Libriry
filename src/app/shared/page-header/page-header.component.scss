@@ -1,0 +1,13 @@
+:host {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #cdcdcd;
+}
+
+div {
+  font-size: 1.25em;
+  font-weight: bold;
+  color: seagreen;
+  text-transform: uppercase;
+}

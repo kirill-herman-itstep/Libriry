@@ -1,0 +1,27 @@
+<page-header [pageName]="pageName" [pageButton]="pageName"></page-header>
+<!-- <page-table></page-table> -->
+<!-- <add-element-modal [inputsNames]="['Hello', ' World']"></add-element-modal> -->
+<table>
+  <thead>
+    <tr>
+      <th *ngFor="let property of bookProperties">{{ property }}</th>
+      <!-- <th>ID</th>
+      <th>Name</th>
+      <th>Author</th>
+      <th>Publishing year</th>
+      <th>Author</th>
+      <th>Author</th> -->
+    </tr>
+  </thead>
+  <tbody>
+    <tr></tr>
+  </tbody>
+</table>
+<div *ngFor="let book of books">{{ book.name }}</div>
+<button (click)="addBook()">Add</button>
+<mat-slide-toggle
+  [checked]="toggleChecked"
+  [name]="'test name'"
+  (change)="toggleChange($event)"
+  >Toggle me!</mat-slide-toggle
+>

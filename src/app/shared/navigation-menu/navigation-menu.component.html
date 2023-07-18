@@ -1,0 +1,5 @@
+<ul class="navigation-container">
+  <li *ngFor="let item of availablePages" [routerLink]="pathFinder(item)">
+    {{ item }}
+  </li>
+</ul>

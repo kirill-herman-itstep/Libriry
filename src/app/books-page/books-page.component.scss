@@ -1,0 +1,11 @@
+:host {
+  display: block;
+
+  background-color: #f6f6f6;
+}
+
+::ng-deep {
+  mat-slide-toggle .mdc-switch__handle-track {
+    transition: none !important;
+  }
+}
